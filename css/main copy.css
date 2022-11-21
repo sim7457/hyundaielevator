@@ -1,0 +1,85 @@
+h1 {
+    margin: 0 0 100px 0;
+    background-color: #ff0;
+}
+
+.first {
+    background: #f7f7f7;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.first .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.first .inner figure {
+    flex: 1;
+
+}
+
+.first .inner figure .box {
+    overflow: hidden;
+}
+
+.first .inner figure img {
+    max-width: 100%;
+    transition: 0.4s;
+}
+
+.first .inner figure:hover img {
+    transform: scale(1.2);
+}
+
+.first h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.first p {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 50px 0;
+}
+
+.first .box {
+    margin: 0 0 40px 0;
+}
+
+.first strong {
+    display: block;
+    margin: 0 0 25px 0;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.first strong::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: rgb(1, 146, 32);
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.first .desc {
+    margin: 0 0 35px 0;
+    line-height: 26px;
+    padding: 0 55px;
+    word-break: keep-all;
+    color: rgb(136, 136, 136);
+}
+
+.first a {
+    display: inline-block;
+    border: 1px solid #f00;
+    color: #f00;
+    padding: 13px 30px;
+}

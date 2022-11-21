@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    color: #444;
+}
+
+.wrap {
+    min-width: 1800px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    line-height: 80px;
+    min-width: 1800px;
+}
+
+.header:hover {
+    background: #fff;
+    color: #333;
+
+}
+
+.header h1 {
+    font-size: 0px;
+}
+
+.header h1 a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 188px;
+    height: 22px;
+    background: url(../img/logo01.png);
+}
+
+.header:hover h1 a {
+    background: url(../img/logo02.png);
+}
+
+.header .right i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+nav>ul {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    width: 1200px;
+    display: flex;
+    gap: 60px;
+}
+
+.mainSlide .itm {
+    height: 100vh;
+}
+
+.mainSlide .itm01 {
+    background: url(../img/main_01.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .itm02 {
+    background: url(../img/main_02.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .itm03 {
+    background: url(../img/main_03.png) no-repeat center center/ cover;
+}
+
+.mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainSlide .slick-dots li {
+    display: inline-block;
+    width: 100px;
+    height: 6px;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainSlide .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 9, 173);
+}
+
+.mainSlide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 2s;
+}
+
+.mainSlide .slick-dots button {
+    display: none;
+}
+
+.mainSlide .itm {
+    position: relative;
+}
+
+.mainSlide .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+.mainSlide .itm p {
+    transform: translate(0, 100px);
+    opacity: 0;
+}
+
+.mainSlide .itm.on p {
+    transform: translate(0, 0);
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.mainSlide .itm span {
+    display: block;
+    transform: translate(0, 100px);
+    opacity: 0;
+}
+
+.mainSlide .itm.on span {
+    transform: translate(0, 0);
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.mainSlide .slogan p {
+    font-size: 37px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0 0 20px 0;
+}
+
+.mainSlide .slogan span {
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+}
+
+.mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -750px;
+}
+
+.mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 750px;
+}
+
+.mainVisual .num {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, 0);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mainVisual .right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, -50%);
+    color: #fff;
+    font-weight: 500;
+
+    text-align: right;
+}
+
+.mainVisual .right li::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    margin: 5px 0 5px 20px;
+    vertical-align: middle;
+}
+
+
+.mainVisual .right li.on::after {
+    background: #fff;
+}
+
+.mainVisual .right li a {
+    font-size: 0;
+}
+
+.mainVisual .right li.on a {
+    font-size: 20px;
+}
+
+.build {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.build h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.build p {
+    font-size: 15px;
+    margin: 0 0 30px 0;
+}
+
+
+.build figure img {
+    margin: 0 auto;
+}
+
+.build .arrows button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 60px;
+    font-size: 0;
+}
+
+.build .arrows button::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background: #fff;
+}
+
+.build .arrows button::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    width: 15px;
+    height: 1px;
+    background: #f00;
+
+}
+
+.build .arrows button.left::after {
+    left: 20px;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.build .arrows button.right::after {
+    right: 20px;
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.build .arrows .left {
+    margin: 0 0 0 -600px;
+}
+
+.build .arrows .right {
+    margin: 0 0 0 600px;
+}
+
+.build .slick-dots {
+    margin: 50px 0 0 0;
+}
+
+.build .slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+.build .slick-dots li button {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border: none;
+}
+
+.build .slick-dots li.slick-active button {
+    background: #008850;
+}
+
+.build .content {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 0 0 0 -500px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.build .port {
+    display: none;
+    padding: 50px 40px 0 40px;
+    text-align: left;
+}
+
+.build .port.on {
+    display: block;
+}
+
+.build .port .tit {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 17px 0;
+}
+
+.build .port .desc {
+    word-break: keep-all;
+    min-height: 120px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+.build .num span {
+    font-size: 30px;
+    color: #008850;
+}
+
+.build .num {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+}
+
+.build .content::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 60px;
+    width: 50px;
+    height: 2px;
+    background: #008850;
+}
+
+.build .port a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #008850;
+    border: 1px solid #008850;
+}
+
+.build figure {
+    filter: grayscale(1) brightness();
+}
+
+.build figure.slick-center {
+    filter: grayscale(0);
+}
+
+.movie {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.movie .movieWrap {
+    margin: 0 auto;
+    width: 800px;
+    height: 450px;
+    position: relative;
+}
+
+.movie .play::after {
+    content: "\ea3b";
+    font-family: xeicon !important;
+}
+
+.movie .play.on::after {
+    content: "\ea3e";
+    font-family: xeicon !important;
+}
+
+.movie .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    background: none;
+}
